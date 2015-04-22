@@ -1,0 +1,23 @@
+{
+  "name": "Praytime",
+  "version": "1.0",
+  "description": "A small Application to have praytime in your location",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/img/icon-128.png"
+  },
+  "developer": {
+    "name": "mmkmou",
+    "url": "http://mmkmou.net"
+  },
+
+  "type": "privileged",
+  "permissions": {
+    "geolocation": {
+        "description" : "Used to locate me"
+    },
+    "systemXHR": {
+      "description": "Required to make Network calls"
+    }
+  }
+}

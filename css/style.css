@@ -1,0 +1,287 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?gzjpb4");
+  src: url("fonts/icomoon.eot?#iefixgzjpb4") format("embedded-opentype"), url("fonts/icomoon.woff?gzjpb4") format("woff"), url("fonts/icomoon.ttf?gzjpb4") format("truetype"), url("fonts/icomoon.svg?gzjpb4#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 3, ../sass/_extend.scss */
+.paragraph, body .prayers_settings form .main p {
+  max-width: 100%;
+  margin: 0 10px;
+}
+/* line 7, ../sass/_extend.scss */
+.paragraph input, body .prayers_settings form .main p input {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  resize: none;
+  padding: 0px 1rem;
+  font-size: 1rem;
+  border: 0.1rem solid #C7C7C7;
+  border-radius: 0px;
+  box-shadow: none;
+  color: #333;
+  background: #FFF none repeat scroll 0% 0%;
+  margin: 1rem 0px;
+  unicode-bidi: -moz-plaintext;
+}
+/* line 24, ../sass/_extend.scss */
+.paragraph select, body .prayers_settings form .main p select {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  resize: none;
+  padding: 0px 1rem;
+  font-size: 1rem;
+  border: 0.1rem solid #C7C7C7;
+  border-radius: 0px;
+  box-shadow: none;
+  color: #333;
+  background: #FFF none repeat scroll 0% 0%;
+  margin: 0px 0px 1rem;
+  unicode-bidi: -moz-plaintext;
+}
+
+/* line 10, ../sass/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 16, ../sass/style.scss */
+body {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+/* line 19, ../sass/style.scss */
+body .prayers_list {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  display: none;
+}
+/* line 25, ../sass/style.scss */
+body .prayers_list > header {
+  background: green;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+}
+/* line 34, ../sass/style.scss */
+body .prayers_list > header section {
+  display: inline-block;
+  width: auto;
+  margin: 7px 0;
+}
+/* line 39, ../sass/style.scss */
+body .prayers_list > header section.menu {
+  cursor: pointer;
+  visibility: hidden;
+  width: 25px;
+  height: 25px;
+}
+/* line 45, ../sass/style.scss */
+body .prayers_list > header section.menu:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e9bd";
+  color: #fff;
+  font-size: 1.5em;
+  visibility: visible;
+}
+/* line 53, ../sass/style.scss */
+body .prayers_list > header section.settings {
+  float: right;
+  cursor: pointer;
+  visibility: hidden;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+/* line 60, ../sass/style.scss */
+body .prayers_list > header section.settings:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e994";
+  color: #fff;
+  font-size: 1.5em;
+  visibility: visible;
+}
+/* line 72, ../sass/style.scss */
+body .prayers_list #loading {
+  min-height: 300px;
+  position: relative;
+  margin-top: 40px;
+}
+/* line 76, ../sass/style.scss */
+body .prayers_list #loading img {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+/* line 83, ../sass/style.scss */
+body .prayers_list .main {
+  min-height: 400px;
+  position: relative;
+  margin-top: 40px;
+}
+/* line 87, ../sass/style.scss */
+body .prayers_list .main ul {
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 90, ../sass/style.scss */
+body .prayers_list .main ul li {
+  padding: 20px 10%;
+  color: green;
+  font-weight: bold;
+}
+/* line 95, ../sass/style.scss */
+body .prayers_list .main ul li.date_for {
+  text-align: center;
+}
+/* line 98, ../sass/style.scss */
+body .prayers_list .main ul li:last-child {
+  border-bottom: none;
+}
+/* line 101, ../sass/style.scss */
+body .prayers_list .main ul li span {
+  display: inline-block;
+  width: 50%;
+}
+/* line 105, ../sass/style.scss */
+body .prayers_list .main ul li span.pray {
+  text-align: left;
+  text-transform: capitalize;
+}
+/* line 110, ../sass/style.scss */
+body .prayers_list .main ul li span.time {
+  text-align: right;
+  margin-left: -6px;
+}
+/* line 119, ../sass/style.scss */
+body .prayers_list footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+}
+/* line 129, ../sass/style.scss */
+body .prayers_settings form header {
+  background: green;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+}
+/* line 138, ../sass/style.scss */
+body .prayers_settings form header section {
+  display: inline-block;
+  width: 25px;
+  margin: 7px 0;
+  cursor: pointer;
+  line-height: 25px;
+  height: 25px;
+}
+/* line 145, ../sass/style.scss */
+body .prayers_settings form header section.title {
+  width: calc(100% - 80px);
+  text-align: center;
+  color: #fff;
+}
+/* line 153, ../sass/style.scss */
+body .prayers_settings form .main {
+  margin-top: 40px;
+  padding-top: 15px;
+}
